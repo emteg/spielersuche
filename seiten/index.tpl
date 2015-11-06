@@ -9,7 +9,7 @@
   <body>
     <h1>Spielersuche</h1>
     <p>Für die folgenden Spiele werden zur Zeit Mitspieler gesucht:</p>
-    <table>
+    <table class="table-auto-height">
       <thead>
         <tr>
           <th>Spiel</th>
