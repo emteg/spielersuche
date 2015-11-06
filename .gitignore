@@ -1,0 +1,11 @@
+# templates_c Ordner enthaelt temporaere dateien
+templates_c
+
+# config.php muss jeweils manuell vor Ort angepasst werden
+config.php
+
+# hintergrundbild muss vor Ort angepasst werden
+background.png
+
+# logo muss vor Ort angepasst werden
+logo.png
