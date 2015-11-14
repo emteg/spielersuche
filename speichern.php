@@ -7,13 +7,11 @@ $datenbank = new Datenbank();
 
 $ip = $_SERVER["REMOTE_ADDR"];
 
-var_dump($_POST);
-
 if (isset($_POST["spiel"]) && isset($_POST["suche"]) && isset($_POST["server"]) && isset($_POST["spieler"])) {
-  $spiel = $_POST["spiel"];
-  $suche = $_POST["suche"];
-  $server = $_POST["server"];
-  $spieler = $_POST["spieler"];
+  $spiel = htmlspecialchars($_POST["spiel"]);
+  $suche = htmlspecialchars($_POST["suche"]);
+  $server = htmlspecialchars($_POST["server"]);
+  $spieler = htmlspecialchars($_POST["spieler"]);
 } else {
   die("Nicht alle Formulardaten vorhanden :/");
 }
