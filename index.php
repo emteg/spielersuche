@@ -10,7 +10,7 @@ $sql = "
   DELETE FROM 
     spiel
   WHERE 
-    zeit < DATE_SUB(CURRENT_TIME(), INTERVAL 2 hour)";
+    zeit < DATE_SUB(CURRENT_TIME(), INTERVAL 5 hour)";
 $datenbank->queryDirekt($sql);
 
 // aktuelle Liste anzeigen
@@ -20,7 +20,7 @@ $sql = "
   FROM 
     spiel 
   WHERE 
-    zeit > DATE_SUB(NOW(), INTERVAL 2 HOUR) 
+    zeit > DATE_SUB(NOW(), INTERVAL 5 HOUR) 
   ORDER BY 
     zeit DESC";
 
